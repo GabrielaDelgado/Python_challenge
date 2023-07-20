@@ -12,3 +12,11 @@ with open(election_csv) as csv_file:
     # Read the header row first
     csv_header = next(csv_file)
     print(f"Header: {csv_header}")
+
+# Total votes
+def total(votes):
+    length = len(votes)
+    sum = 0.0
+    for vote in votes:
+        sum += vote
+    return sum
